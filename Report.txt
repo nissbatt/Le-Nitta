@@ -1,0 +1,16 @@
+  =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  |         R E P O R T  O F  T H E  D A Y         |
+  =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ TOTAL CUSTOMER: 2
+ CUSTOMER WITH THE HIGHEST AMOUNT PAID: zahra
+ TOTAL PROFIT FOR WHOLE FOODCOURT: RM89.11
+ STAFF IN CHARGE: anis
+------------------------------------------------------
+ Food ordered from vendor: 
+ WESTERN: 2
+ MALAY: 0
+ THAILAND: 1
+ KOREAN: 2
+ BEVERAGES: 0
+------------------------------------------------------
+ BEST VENDOR BASED ON NUMBER OF ORDER: Western Vendor
