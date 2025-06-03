@@ -47,17 +47,17 @@ public class Menu
         else if(foodCode.equalsIgnoreCase("W3"))
             price = 7.0 * quantity;
         else if(foodCode.equalsIgnoreCase("W4"))
-            price = 5.0 * quantity;
+            price = 10.0 * quantity;
         
         //malay
         if(foodCode.equalsIgnoreCase("M1"))
-            price = 3.0 * quantity;
+            price = 4.0 * quantity;
         else if(foodCode.equalsIgnoreCase("M2"))
-            price = 7.0 * quantity;
+            price = 3.0 * quantity;
         else if(foodCode.equalsIgnoreCase("M3"))
             price = 8.0 * quantity;
         else if(foodCode.equalsIgnoreCase("M4"))
-            price = 4.0 * quantity;
+            price = 7.0 * quantity;
         
         //thai
         if(foodCode.equalsIgnoreCase("T1"))
@@ -81,13 +81,13 @@ public class Menu
         
         //beverage
         if(foodCode.equalsIgnoreCase("B1"))
-            price = 2.5 * quantity;
-        else if(foodCode.equalsIgnoreCase("B2"))
-            price = 3.0 * quantity;
-        else if(foodCode.equalsIgnoreCase("B3"))
             price = 3.5 * quantity;
-        else if(foodCode.equalsIgnoreCase("B4"))
+        else if(foodCode.equalsIgnoreCase("B2"))
             price = 4.0 * quantity;
+        else if(foodCode.equalsIgnoreCase("B3"))
+            price = 3.0 * quantity;
+        else if(foodCode.equalsIgnoreCase("B4"))
+            price = 2.5 * quantity;
             
         return price;
     }
@@ -107,13 +107,13 @@ public class Menu
         
         //malay
         if(foodCode.equalsIgnoreCase("M1"))
-            foodName = "Nasi Lemak      ";
+            foodName = "Apam Balik      ";
         else if(foodCode.equalsIgnoreCase("M2"))
-            foodName = "Chicken Rice    ";
+            foodName = "Nasi Lemak      ";
         else if(foodCode.equalsIgnoreCase("M3"))
             foodName = "Nasi Kerabu     ";
         else if(foodCode.equalsIgnoreCase("M4"))
-            foodName = "Apam Balik      ";
+            foodName = "Chicken Rice    ";
             
         //thai
         if(foodCode.equalsIgnoreCase("T1"))
@@ -137,13 +137,13 @@ public class Menu
         
         //beverage
         if(foodCode.equalsIgnoreCase("B1"))
-            foodName = "Iced Lemon Tea  ";
-        else if(foodCode.equalsIgnoreCase("B2"))
-            foodName = "Chocolate Milk  ";
-        else if(foodCode.equalsIgnoreCase("B3"))
             foodName = "Matcha          ";
-        else if(foodCode.equalsIgnoreCase("B4"))
+        else if(foodCode.equalsIgnoreCase("B2"))
             foodName = "Coffee       ";
+        else if(foodCode.equalsIgnoreCase("B3"))
+            foodName = "Chocolate Milk  ";
+        else if(foodCode.equalsIgnoreCase("B4"))
+            foodName = "Iced Lemon Tea  ";
         
         return foodName;
     }

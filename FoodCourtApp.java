@@ -50,7 +50,7 @@ public class FoodCourtApp
             System.out.println("\nCustomer " + custCount + " Order");
             System.out.println("Enter Customer's name: ");
             nameCustomer[l] = input.next();
-            System.out.println("Enter quantity of food ordered: ");
+            System.out.println("Enter quantity of vendor you visited: ");
             size = input.nextInt();
             
             //array declaration for object
@@ -69,7 +69,12 @@ public class FoodCourtApp
                 System.out.println(" |      W E L C O M E  T O  L E ' N I T T A         |");
                 System.out.println("  =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
                 
-                System.out.println("Choose vendor [W/K/T/M/B]: ");
+                System.out.println("Choose vendor"+
+                                   "\n (W) Western"+
+                                   "\n (K) Korean"+
+                                   "\n (T) Thailand"+
+                                   "\n (M) Malay"+
+                                   "\n (B) Beverages");
                 typeVendor[i] = input.next().charAt(0);
                     
                     if(typeVendor[i] == 'W' || typeVendor[i] == 'w')
@@ -80,10 +85,10 @@ public class FoodCourtApp
                         System.out.println("-----------------------------------------------------");
                         System.out.println("|    f o o d  n a m e    |          p r i c e       |");
                         System.out.println("-----------------------------------------------------");
-                        System.out.println("|     Fish 'n' Chip      |          RM 10.00        |");
-                        System.out.println("|     Chicken  Chop      |          RM 15.00        |");
-                        System.out.println("|     Burger   GTR       |          RM  7.00        |");
-                        System.out.println("|     Nugget & Sausage   |          RM 10.00        |");
+                        System.out.println("|(W1) Fish 'n' Chip      |          RM 10.00        |");
+                        System.out.println("|(W2) Chicken  Chop      |          RM 15.00        |");
+                        System.out.println("|(W3) Burger   GTR       |          RM  7.00        |");
+                        System.out.println("|(W4) Nugget & Sausage   |          RM 10.00        |");
                         System.out.println("-----------------------------------------------------");
                         cust[0]++;
                         vend[0] = "Western";
@@ -96,10 +101,10 @@ public class FoodCourtApp
                         System.out.println("-----------------------------------------------------");
                         System.out.println("|    f o o d  n a m e    |          p r i c e       |");
                         System.out.println("-----------------------------------------------------");
-                        System.out.println("|     Apam Balik         |          RM  4.00        |");
-                        System.out.println("|     Nasi Lemak         |          RM  3.00        |");
-                        System.out.println("|     Nasi Kerabu        |          RM  8.00        |");
-                        System.out.println("|     Chicken  Rice      |          RM  7.00        |");
+                        System.out.println("|(M1) Apam Balik         |          RM  4.00        |");
+                        System.out.println("|(M2) Nasi Lemak         |          RM  3.00        |");
+                        System.out.println("|(M3) Nasi Kerabu        |          RM  8.00        |");
+                        System.out.println("|(M4) Chicken  Rice      |          RM  7.00        |");
                         System.out.println("-----------------------------------------------------");
                         cust[1]++;
                         vend[1] = "Malay";
@@ -112,10 +117,10 @@ public class FoodCourtApp
                         System.out.println("-----------------------------------------------------");
                         System.out.println("|    f o o d  n a m e    |          p r i c e       |");
                         System.out.println("-----------------------------------------------------");
-                        System.out.println("|     Tomyam             |          RM  7.50        |");
-                        System.out.println("|     Pad Thai           |          RM  6.50        |");
-                        System.out.println("|     Kerabu Tomyam      |          RM  6.00        |");
-                        System.out.println("|     Claypot Chicken    |          RM  7.00        |");
+                        System.out.println("|(T1) Tomyam             |          RM  7.50        |");
+                        System.out.println("|(T2) Pad Thai           |          RM  6.50        |");
+                        System.out.println("|(T3) Kerabu Tomyam      |          RM  6.00        |");
+                        System.out.println("|(T4) Claypot Chicken    |          RM  7.00        |");
                         System.out.println("-----------------------------------------------------");
                         cust[2]++;
                         vend[2] = "Thailand";
@@ -128,10 +133,10 @@ public class FoodCourtApp
                         System.out.println("-----------------------------------------------------");
                         System.out.println("|    f o o d  n a m e    |          p r i c e       |");
                         System.out.println("-----------------------------------------------------");
-                        System.out.println("|     Ramyeon            |          RM   6.50       |");
-                        System.out.println("|     Bulgogi            |          RM  15.00       |");
-                        System.out.println("|     Kimchi Stew        |          RM  12.00       |");
-                        System.out.println("|     Jajangmyeon        |          RM  10.00       |");
+                        System.out.println("|(K1) Ramyeon            |          RM   6.50       |");
+                        System.out.println("|(K2) Bulgogi            |          RM  15.00       |");
+                        System.out.println("|(K3) Kimchi Stew        |          RM  12.00       |");
+                        System.out.println("|(K4) Jajangmyeon        |          RM  10.00       |");
                         System.out.println("-----------------------------------------------------");
                         cust[3]++;
                         vend[3] = "Korean";
@@ -144,10 +149,10 @@ public class FoodCourtApp
                         System.out.println("-----------------------------------------------------");
                         System.out.println("|   d r i n k  n a m e   |          p r i c e       |");
                         System.out.println("-----------------------------------------------------");
-                        System.out.println("|     Matcha             |          RM   3.50       |");
-                        System.out.println("|     Coffee             |          RM   4.00       |");
-                        System.out.println("|     Chocolate Milk     |          RM   3.00       |");
-                        System.out.println("|     Iced Lemon Tea     |          RM   2.50       |");
+                        System.out.println("|(B1) Matcha             |          RM   3.50       |");
+                        System.out.println("|(B2) Coffee             |          RM   4.00       |");
+                        System.out.println("|(B3) Chocolate Milk     |          RM   3.00       |");
+                        System.out.println("|(B4) Iced Lemon Tea     |          RM   2.50       |");
                         System.out.println("-----------------------------------------------------");
                         cust[4]++;
                         vend[4] = "Beverages";
@@ -175,18 +180,14 @@ public class FoodCourtApp
             contactCustomer = st.nextToken();
             tableNoCustomer = Integer.parseInt(st.nextToken());
             
-            System.out.print("Enter customer's payment method: ");
+            System.out.print("Enter customer's payment method [Cash/E-wallet]: ");
             payMetCustomer = input.next().charAt(0);            
             
             System.out.print("Does customer have a membership? [Y/N]: ");
             membership = input.next().charAt(0);
             
             orderObj = new Order(idOrder, nameCustomer[l], contactCustomer, tableNoCustomer, payMetCustomer, membership);   
-            
-            //calc for disc, tax, total
-            orderObj.discount(subTotal[l]);
-            orderObj.tax(subTotal[l]);
-            
+                        
             for(int q = 0; q < size; q++)
             {
                 vendorObj = new Vendor(typeVendor[q], staffVendor, nameCustomer[l], contactCustomer, tableNoCustomer, payMetCustomer, membership);
@@ -203,9 +204,15 @@ public class FoodCourtApp
             {
                 System.out.println(menuObj[t].toString());
             }
+            //calc for disc, tax, total
+            orderObj.discount(subTotal[l]);
+            orderObj.tax(subTotal[l]);
+            orderObj.overallTotal(subTotal[l]);
+            orderObj.balance(cash, subTotal[l]);
+            
+            //display receipt
             orderObj.displayReceipt2(cash, subTotal[l]);
             System.out.println(vendorObj.toString());
-            
             
             //total profit for all vendor
             overall = overall + orderObj.overallTotal(subTotal[l]);
@@ -215,7 +222,7 @@ public class FoodCourtApp
         
         String BestCustomer = nameCustomer[0];
         double maxTotal = orderObj.overallTotal(subTotal[0]);
-        for(int d = 1; d < custNum; d++)
+        for(int d = 0; d < custNum; d++)
         {
             //customer with higher amount paid
             if(maxTotal < orderObj.overallTotal(subTotal[d]))
@@ -244,14 +251,14 @@ public class FoodCourtApp
                 "\n TOTAL PROFIT FOR WHOLE FOODCOURT: RM" + df.format(overall) +
                 "\n STAFF IN CHARGE: " + staffVendor +
                 "\n------------------------------------------------------" +
-                "\n Food ordered from vendor: " +
+                "\n Total customer visited from each vendor: " +
                 "\n WESTERN: " + cust[0] +
                 "\n MALAY: " + cust[1] +
                 "\n THAILAND: " + cust[2] +
                 "\n KOREAN: " + cust[3] +
                 "\n BEVERAGES: " + cust[4] + 
                 "\n------------------------------------------------------" +
-                "\n BEST VENDOR BASED ON NUMBER OF ORDER: " + maxVend + " Vendor");
+                "\n BEST VENDOR BASED ON NUMBER OF CUSTOMER: " + maxVend + " Vendor");
                 
                          
         br.close();

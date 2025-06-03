@@ -3,7 +3,7 @@ import java.text.DecimalFormat;
 public class Order extends Customer
 {
     private String id;
-    DecimalFormat df = new DecimalFormat(".00");
+    DecimalFormat df = new DecimalFormat("0.00");
     
     public Order()
     {
@@ -56,12 +56,12 @@ public class Order extends Customer
             discount = price * 0.2;
         
         double Ewallet = 0.0;
-        if (super.getPaymentMethod() == 'E'){
+        if (super.getPaymentMethod() == 'E' || super.getPaymentMethod() == 'e'){
             Ewallet = price * 0.03;
         }
         
         double mem = 0.0;
-        if (super.getMembership() == 'Y')
+        if (super.getMembership() == 'Y' || super.getMembership() == 'y')
             mem = price * 0.04;
             
         discount = Ewallet + discount + mem;
@@ -87,7 +87,7 @@ public class Order extends Customer
     {
         double balance = 0.0;
         
-        if (super.getPaymentMethod() == 'C')
+        if (super.getPaymentMethod() == 'C' || super.getPaymentMethod() == 'c')
             balance = cash - overallTotal(price);
             
         return balance;
@@ -97,9 +97,9 @@ public class Order extends Customer
     {
         String method = null;
         
-        if (super.getPaymentMethod() == 'C')
+        if (super.getPaymentMethod() == 'C' || super.getPaymentMethod() == 'c')
             method = "Cash";
-        else if(super.getPaymentMethod() == 'E')
+        else if(super.getPaymentMethod() == 'E' || super.getPaymentMethod() == 'e')
             method = "E-wallet";
             
         return method;
@@ -129,7 +129,7 @@ public class Order extends Customer
         if (super.getPaymentMethod() == 'C' || super.getPaymentMethod() == 'c')
         {
             System.out.println("\nTotal Amount given: RM" + df.format(cash));
-            System.out.println("\nBalance: RM" + df.format(balance(cash, price)));
+            System.out.print("\nBalance: RM" + df.format(balance(cash, price)));
         }
     }
 }
